@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>C93</title>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            h1{
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #trending label:hover{
+                text-decoration: underline;
+            }
+        </style>
+        <!--Firebase links-->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body class="bg-primary">
+        <button class="btn btn-danger" style="float: right; margin: 5px;width:12%" onclick="logout()"><i class="fas fa-arrow-alt-circle-left" style="margin:3px;"></i>Logout</button><br><br>
+        <center>
+            <h1 class="text-white">Kwitter<sup><img width="50px" src="m2.png"></sup></h1>
+            <img src="giphy.gif" width="50%" height="50vh" style="margin:10px;width:70px;border-radius: 50%;"><br>
+            <label class="text-white" style="font-size: large;" id="nameL">Error</label><br>
+            <label class="text-white">#Add a Room</label><br>
+            <input class="form-control col-lg-8 col-md-8 col-sm-10 col-xs-11" type="text" id="roomI" placeholder="Enter Room Name...">&nbsp<button style=" font-weight: bold; margin: 10px;" onclick="addRoom($('#roomI').val())" class="btn  btn-warning text-primary">Add Room</button><br>
+            <br><br>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-11 bg-white text-primary" style="border-radius: 10px; padding:20px;" id="trending">
+                <h3>#All Rooms</h3><hr>
+                <span></span>
+            </div>
+        </center>
+    </body>
+    <script src="kwitter_room.js"></script>
+</html>

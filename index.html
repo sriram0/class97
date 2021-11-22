@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>C93</title>
+        <!--Firebase Realtime Database-->
+        <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+        <!--Cloud Firestore-->
+        <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-firestore.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            h1{
+                font-family: 'Courier New', Courier, monospace;
+            }img{
+                width: 50px;
+                border-radius: 50%;
+            }#login{
+                border-radius: 20px;
+                padding: 20px;
+            }#logo{
+                width: 70px;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body class="bg-primary">
+        <center class="container">
+            <h1 class="text-white">Kwitter<sup><img src="m2.png"></sup></h1>
+            <p class="text-dark" style="max-width:40%;">Kwitter is a social web app for kids. Create rooms and chat with friends using Kwitter!</p>
+            <img src="giphy.gif" width="50%" height="50%" style="margin:10px;width:70px;">
+            <div id="login" class="bg-white col-lg-8 col-md-8 col-sm-10 col-xs-11">
+                <img id="logo" src="logo.png"><br>
+                <b>Username:</b>
+                <input id="userN" placeholder="Username..." type="text" class="form-control"><br>
+                <button class="btn btn-primary" style="width:70%;" onclick="login()">Login</button>
+                
+            </div>
+            
+        </center>
+    </body>
+    <script src="index.js">
+    </script>
+</html>
